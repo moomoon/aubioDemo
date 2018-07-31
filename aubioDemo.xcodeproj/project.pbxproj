@@ -14,6 +14,12 @@
 		222E7A9C211021AB00FB3435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222E7A9A211021AB00FB3435 /* LaunchScreen.storyboard */; };
 		222E7AA7211021AB00FB3435 /* aubioDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E7AA6211021AB00FB3435 /* aubioDemoTests.swift */; };
 		222E7AB2211021AB00FB3435 /* aubioDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E7AB1211021AB00FB3435 /* aubioDemoUITests.swift */; };
+		222E7AC4211024D300FB3435 /* Aubios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222E7AC3211024D300FB3435 /* Aubios.swift */; };
+		222E7AC7211027AF00FB3435 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222E7AC6211027AF00FB3435 /* Accelerate.framework */; };
+		222E7ACB211029FE00FB3435 /* aubio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222E7ABF211024AA00FB3435 /* aubio.framework */; };
+		222E7ACD2110330D00FB3435 /* audio.wav in Resources */ = {isa = PBXBuildFile; fileRef = 222E7ACC2110330C00FB3435 /* audio.wav */; };
+		222E7ACF2110362700FB3435 /* sweet_dream.wav in Resources */ = {isa = PBXBuildFile; fileRef = 222E7ACE2110362700FB3435 /* sweet_dream.wav */; };
+		222E7AD52110385600FB3435 /* nezha.wav in Resources */ = {isa = PBXBuildFile; fileRef = 222E7AD42110385600FB3435 /* nezha.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		222E7AAD211021AB00FB3435 /* aubioDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aubioDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		222E7AB1211021AB00FB3435 /* aubioDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aubioDemoUITests.swift; sourceTree = "<group>"; };
 		222E7AB3211021AB00FB3435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222E7ABF211024AA00FB3435 /* aubio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = aubio.framework; sourceTree = "<group>"; };
+		222E7AC3211024D300FB3435 /* Aubios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aubios.swift; sourceTree = "<group>"; };
+		222E7AC6211027AF00FB3435 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		222E7ACC2110330C00FB3435 /* audio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = audio.wav; sourceTree = "<group>"; };
+		222E7ACE2110362700FB3435 /* sweet_dream.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sweet_dream.wav; sourceTree = "<group>"; };
+		222E7AD42110385600FB3435 /* nezha.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = nezha.wav; path = ../../../Desktop/nezha.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222E7AC7211027AF00FB3435 /* Accelerate.framework in Frameworks */,
+				222E7ACB211029FE00FB3435 /* aubio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +95,7 @@
 				222E7AA5211021AB00FB3435 /* aubioDemoTests */,
 				222E7AB0211021AB00FB3435 /* aubioDemoUITests */,
 				222E7A8F211021A900FB3435 /* Products */,
+				222E7AC5211027AF00FB3435 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +112,16 @@
 		222E7A90211021A900FB3435 /* aubioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				222E7ACC2110330C00FB3435 /* audio.wav */,
+				222E7ACE2110362700FB3435 /* sweet_dream.wav */,
+				222E7AD42110385600FB3435 /* nezha.wav */,
 				222E7A91211021A900FB3435 /* AppDelegate.swift */,
 				222E7A93211021A900FB3435 /* ViewController.swift */,
 				222E7A95211021A900FB3435 /* Main.storyboard */,
 				222E7A98211021AB00FB3435 /* Assets.xcassets */,
 				222E7A9A211021AB00FB3435 /* LaunchScreen.storyboard */,
 				222E7A9D211021AB00FB3435 /* Info.plist */,
+				222E7AC3211024D300FB3435 /* Aubios.swift */,
 			);
 			path = aubioDemo;
 			sourceTree = "<group>";
@@ -123,6 +142,15 @@
 				222E7AB3211021AB00FB3435 /* Info.plist */,
 			);
 			path = aubioDemoUITests;
+			sourceTree = "<group>";
+		};
+		222E7AC5211027AF00FB3435 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222E7ABF211024AA00FB3435 /* aubio.framework */,
+				222E7AC6211027AF00FB3435 /* Accelerate.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +260,9 @@
 				222E7A9C211021AB00FB3435 /* LaunchScreen.storyboard in Resources */,
 				222E7A99211021AB00FB3435 /* Assets.xcassets in Resources */,
 				222E7A97211021A900FB3435 /* Main.storyboard in Resources */,
+				222E7AD52110385600FB3435 /* nezha.wav in Resources */,
+				222E7ACD2110330D00FB3435 /* audio.wav in Resources */,
+				222E7ACF2110362700FB3435 /* sweet_dream.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222E7AC4211024D300FB3435 /* Aubios.swift in Sources */,
 				222E7A94211021A900FB3435 /* ViewController.swift in Sources */,
 				222E7A92211021A900FB3435 /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +464,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WK8JR6VTF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = aubioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +487,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WK8JR6VTF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = aubioDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
